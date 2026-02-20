@@ -33,5 +33,8 @@ bool XOR(bool a, bool b) {
 }
 
 bool FUNC3(bool a, bool b, bool c) {
+    bool left = (a && !c) && b;
+    bool right = (!b || c) || a;
     
+    return !left || right;
 }
